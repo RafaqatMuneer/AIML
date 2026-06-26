@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 import pickle
 import numpy as np
-from utils.response import success_response
 
 # intiating Flask app
 app = Flask(__name__)
@@ -32,6 +31,8 @@ def predict():
     ])
 
     prediction = model.predict(features)
+
+    # Return data to the front end
 
     return jsonify({
         "predicted_grade": round(float(prediction[0]), 2)
