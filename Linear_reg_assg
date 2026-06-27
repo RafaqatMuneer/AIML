@@ -9,6 +9,5 @@ df = pd.read_csv(r"D:\Datasets\Salary_Data.csv")
 print(f"\nHere is the overview of dataset \n{df.head()}\n")
 print(f"Number of rows and columns in the data set are: {df.shape}")
 # Plotting the dataset for overlook
-
 plt.scatter(df.YearsExperience,df.Salary)
 plt.show()
