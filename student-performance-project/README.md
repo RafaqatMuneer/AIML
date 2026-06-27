@@ -61,7 +61,6 @@ models/linear_model.pkl
 ## Run the Flask API
 
 ```bash
-cd flask_api
 python app.py
 ```
 
